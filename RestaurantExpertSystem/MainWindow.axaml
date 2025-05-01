@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="RestaurantExpertSystem.MainWindow"
+        Title="Pakistani Restaurant Expert System"
+        Width="400" Height="500">
+
+    <StackPanel Margin="20" Spacing="10">
+
+        <TextBlock Text="Select Time:"/>
+        <ComboBox x:Name="TimeBox">
+            <ComboBoxItem Content="Breakfast"/>
+            <ComboBoxItem Content="Lunch"/>
+            <ComboBoxItem Content="Dinner"/>
+        </ComboBox>
+
+        <TextBlock Text="Select Mood:"/>
+        <ComboBox x:Name="MoodBox">
+            <ComboBoxItem Content="Light"/>
+            <ComboBoxItem Content="Heavy"/>
+        </ComboBox>
+
+        <TextBlock Text="Enter Budget (Rs):"/>
+        <TextBox x:Name="BudgetBox"/>
+
+        <Button Content="Suggest Meal" Click="OnSuggestClick"/>
+
+        <TextBlock x:Name="ResultBlock"
+                   TextWrapping="Wrap"
+                   FontSize="14"
+                   Margin="10,20,0,0"
+                   Foreground="DarkGreen"/>
+    </StackPanel>
+</Window>

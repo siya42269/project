@@ -1,0 +1,18 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="RestaurantExpertSystem.WelcomeWindow"
+        Title="Welcome"
+        Width="400" Height="300">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock Text="🍽️ Welcome to the Pakistani Restaurant Expert System"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap"
+                   Margin="10"
+                   FontSize="16"/>
+        <Button Content="Start"
+                Width="120"
+                Margin="10"
+                Click="OnStartClick"/>
+    </StackPanel>
+</Window>
